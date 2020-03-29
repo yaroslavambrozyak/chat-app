@@ -11,7 +11,7 @@ import java.util.UUID;
 @Document("user")
 public class User {
 
-    private UUID id;
+    private String id;
     private String email;
     private String firstName;
     private String lastName;
