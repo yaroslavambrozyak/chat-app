@@ -17,7 +17,13 @@ public class Chat {
     @Id
     private String id;
     private LocalDateTime createdAt;
+    private String title;
     private List<Message> messages;
     private List<UUID> members;
+
+    public Chat(String title, List<UUID> members) {
+        this.title = title;
+        this.members = members;
+    }
 
 }
