@@ -1,0 +1,7 @@
+#chat-list-fragment-root{
+    height: 100vh;
+    background-color: red;
+    width: 25%;
+    float: left;
+    overflow-y: scroll;
+}
