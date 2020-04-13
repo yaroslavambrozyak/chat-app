@@ -52,7 +52,7 @@ public class ChatServiceImpl implements ChatService {
 
     @Override
     public List<Message> getMessages(String chatId, int page, int size) {
-        Chat chatMessages = chatRepository.findChatMessages(chatId, page, size);
+        Chat chatMessages = chatRepository.findChatMessages(chatId, page, size).orElseThrow(RuntimeException::new);
         return chatMessages.getMessages();
     }
 

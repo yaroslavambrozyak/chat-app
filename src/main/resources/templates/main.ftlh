@@ -13,5 +13,6 @@
     <#include "fragments/chat-list-fragment.ftlh">
     <#include "fragments/chat-fragment.ftlh">
 </div>
+<script src="/js/chat-fragment.js"></script>
 </body>
 </html>

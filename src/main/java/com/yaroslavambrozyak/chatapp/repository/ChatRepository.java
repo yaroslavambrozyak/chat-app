@@ -18,5 +18,5 @@ public interface ChatRepository extends MongoRepository<Chat, String>, MongoChat
     Optional<Chat> findByIdWithPageableMessage(String chatId, Integer messagePage, Integer messageSize);
 
     @Query(fields = "{messages: {$slice:[?1,?2]}}", value = "{id:?0}")
-    Chat findChatMessages(String chatId, int page, int size);
+    Optional<Chat> findChatMessages(String chatId, int page, int size);
 }
